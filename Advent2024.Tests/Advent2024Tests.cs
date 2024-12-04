@@ -35,4 +35,14 @@ public class Advent2024Tests
             Assert.AreEqual(expected,actual);
         }
     }
+
+    [TestMethod]
+    public void Day3()
+    {
+        var input = "xmul(2,4)%&mul[3,7]!@^do_not_mul(5,5)+mul(32,64]then(mul(11,8)mul(8,5))";
+
+        var result = new Day3().Run(input);
+
+        Assert.AreEqual(161, result);
+    }
 }
