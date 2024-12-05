@@ -45,4 +45,22 @@ public class Advent2024Tests
 
         Assert.AreEqual(161, result);
     }
+
+    [TestMethod]
+    public void Day4()
+    {
+        var input =
+@"MMMSXXMASM
+MSAMXMSMSA
+AMXSXMAAMM
+MSAMASMSMX
+XMASAMXAMM
+XXAMMXXAMA
+SMSMSASXSS
+SAXAMASAAA
+MAMMMXMMMM
+MXMXAXMASX";
+        var result = new Day4().Run(input);
+        Assert.AreEqual(18, result);
+    }
 }
